@@ -22,3 +22,4 @@ o que é: função que devolve um valor
 para que serve: usar o resultado em outras partes do código
 como você usou no exemplo: somei dois números e guardei o resultado
 em qual pasta o professor pode encontrar o arquivo: atividade_dupla/funcoes
+
