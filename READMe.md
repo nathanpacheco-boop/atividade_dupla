@@ -117,7 +117,7 @@ para que serve: selecionar entre vários casos
 como você usou no exemplo: associei número ao dia
 em qual pasta o professor pode encontrar o arquivo: atividade_dupla/condicionais
 
-# 06 Estruturas de Repetição:
+# 06 Estruturas de Repetição
 
 ### Como usar estruturas de repetição
 Estruturas de repetição, também chamadas de laços ou loops, permitem executar um bloco de código várias vezes sem precisar repeti-lo manualmente. Em JavaScript, o for é usado quando se sabe quantas vezes o código deve repetir. O while é usado quando a repetição depende de uma condição que pode mudar a qualquer momento — ele continua executando enquanto a condição for verdadeira. O do while é parecido com o while, com a diferença de que o bloco de código é executado pelo menos uma vez antes de a condição ser verificada.
@@ -134,7 +134,9 @@ para que serve: repetir enquanto uma condição for verdadeira
 como você usou no exemplo: repeti o código enquanto i era menor que 5
 em qual pasta o professor pode encontrar o arquivo: atividade_dupla/repeticao
 
-# 07 O que é uma função:
+# 07 Funções
+
+### O que é uma função
 Bloco de código reutilizável que executa uma tarefa
 como declarar: usando "function nome() {}"
 como chamar: escrevendo "nome()"
