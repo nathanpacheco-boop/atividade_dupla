@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos - Operadores Lógicos</title>
+</head>
+<body>
+
+</body>
+
+<script>
+// Exemplos JS:
+
+// Operadores aritméticos
+
+10 + 3 
+10 - 3 
+10 * 3 
+10 / 3 
+10 % 3 
+10 ** 3
+
+// Operadores relacionais
+10 > 5  
+10 < 5  
+10 >= 10 
+10 <= 9  
+
+//  Operadores lógicos
+true && false 
+true || false 
+!true         
+
+// Comparação com ==
+5 == "5" 
+
+
+// Comparação com ===
+5 === "5" 
+
+// Comparação com !=
+5 != "5" 
+
+
+// Comparação com !==
+5 !== "5"
+
+// Por que === é mais seguro
+let codigo = 0;
+let vazio  = "";
+
+codigo == vazio  // true  — o JS converte os dois e considera iguais
+codigo === vazio // false — número e string são tipos diferentes
+
+// Com ==, o JS aceita que 0 e "" são iguais, o que raramente é o que queremos.
+// Com ===, o JS exige que valor E tipo sejam iguais,
+// evitando comparações inesperadas que podem gerar bugs silenciosos.
+
+</script>
+</html>

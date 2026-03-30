@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de páginas</title>
+</head>
+<body>
+<!--document-->
+<script>
+console.log(document);
+</script>
+<!--getElementById-->
+<p id="texto">Olá</p>
+
+<script>
+let el = document.getElementById("texto");
+el.textContent = "Mudou!";
+</script>
+
+<!--querySelector()-->
+<p class="msg">Oi</p>
+<script>
+document.querySelector(".msg").textContent = "Alterado";
+</script>
+
+<!--.value-->
+<input id="nome">
+<button onclick="mostrar()">OK</button>
+<script>
+function mostrar() {
+  console.log(document.getElementById("nome").value);
+}
+</script>
+
+<!--.checked-->
+<input type="checkbox" id="check">
+<script>
+console.log(document.getElementById("check").checked);
+</script>
+
+<!--.textContent-->
+<p id="txt">Texto</p>
+<script>
+document.getElementById("txt").textContent = "Novo";
+</script>
+
+<!--.style-->
+<p id="cor">Texto</p>
+<script>
+document.getElementById("cor").style.color = "red";
+</script>
+
+<!--classList-->
+<p id="box">Texto</p>
+<script>
+document.getElementById("box").classList.add("ativo");
+</script>
+
+<!--addEventListener-->
+<button id="btn">Clique</button>
+
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("Clicou!");
+});
+</script>
+
+<!--querySelectorAll()-->
+<p class="item">1</p>
+<p class="item">2</p>
+
+<script>
+let itens = document.querySelectorAll(".item");
+console.log(itens.length);
+</script>
+
+<!--checkValidity()-->
+<input id="email" required>
+
+<script>
+console.log(document.getElementById("email").checkValidity());
+</script>
+
+<!--DOMContentLoaded-->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("Carregou!");
+});
+</script>
+
+<!--createElement()-->
+<script>
+let p = document.createElement("p");
+p.textContent = "Novo elemento";
+document.body.appendChild(p);
+</script>
+
+<!--appendChild()-->
+<div id="pai"></div>
+
+<script>
+let filho = document.createElement("p");
+filho.textContent = "Filho";
+document.getElementById("pai").appendChild(filho);
+</script>
+
+<!--remove()-->
+<p id="remover">Apagar</p>
+
+<script>
+document.getElementById("remover").remove();
+</script>
+
+
+</body>
+</html>
